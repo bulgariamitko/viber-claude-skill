@@ -1,0 +1,17 @@
+# Compiled helper (build locally with: clang++ -std=c++17 -O1 -o vsql vsql.cpp)
+scripts/vsql
+*.o
+*.dSYM/
+
+# Never commit any decrypted data, keys, or transcripts
+ViberLocal/
+*.db
+*.db-wal
+*.db-shm
+.viber_keys
+transcripts/
+
+# OS / editor cruft
+.DS_Store
+__pycache__/
+*.pyc
